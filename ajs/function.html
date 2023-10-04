@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        // function j_return(a, b) {
+        //     var sum;
+        //     sum = a + b;
+        //     return sum;
+        // }
+        // document.write(j_return(5, 5))
+        // ***************************************************************
+
+        // literal
+        // const sum = function (x, y) {
+        //     document.write(x * y);
+        // };
+        // sum(5, 7);
+        // ***************************************************************
+
+        // default parameter values
+        // function myFunction(x = 0, y = 10) {
+        //     return x + y;
+        // }
+        // document.getElementById("demo").innerHTML = myFunction();
+        // ***************************************************************
+
+        // nested function
+        function one(a, b) {
+            function square(x) {
+                return x * x;
+            }
+            document.write(square(5) + "<br>")
+            return a + b;
+        }
+
+        document.write(one(3, 4))
+    </script>
+</body>
+</html>

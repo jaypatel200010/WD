@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .top{
+            height: 200px;
+            background-color: aqua;
+            
+        }
+        .main{
+            height: 100px;
+            background-color: red;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .t1{
+            height: inherit;
+            width: 25%;
+        }
+        
+        @media (min-width:320px) and (max-width:480px) {
+            .t1{
+          background-color: green;
+        }
+        #one-1{
+            background-color: red;
+            width: 100%;
+        }
+        #one-2{
+            background-color: yellow;
+            width: 100%;
+        }
+        #one-3{
+            background-color: green;
+            width: 100%;
+        } 
+        #one-4{
+            background-color: blue;
+            width: 100%;
+        }
+
+    }
+    @media (min-width:481px) and (max-width:768px) {
+            .t1{
+          background-color: green;
+        }
+        #one-1{
+            background-color: red;
+            width: 50%;
+        }
+        #one-2{
+            background-color: yellow;
+            width: 50%;
+        }
+        #one-3{
+            background-color: green;
+            width: 50%;
+        } 
+        #one-4{
+            background-color: blue;
+            width: 50%;
+        }
+        
+    }
+    @media (min-width:769px) and (max-width:1024px) {
+            .t1{
+          background-color: green;
+        }
+        #one-1{
+            background-color: red;
+            width: 25%;
+        }
+        #one-2{
+            background-color: yellow;
+            width: 25%;
+        }
+        #one-3{
+            background-color: green;
+            width: 25%;
+        } 
+        #one-4{
+            background-color: blue;
+            width: 25%;
+        }
+        
+    }
+    </style>
+</head>
+<body>
+    <div class="top"></div>
+    <div class="main">
+        <div class="t1" id="one-1">1</div>
+        <div class="t1" id="one-2">2</div>
+        <div class="t1" id="one-3">3</div>
+        <div class="t1" id="one-4">4</div>
+    </div>
+</body>
+</html>

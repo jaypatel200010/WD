@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        *{
+            margin: 0;                       /*universal adjust*/
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* top portion */
+        .top{
+            height: 60px;
+            width: 100%;
+            background-color: rgb(38, 38, 230);
+            display: flex;
+        }
+        /* sub div of top portion 1st partition */
+        .sub{
+            height: inherit;
+            width: 20%;
+            background-color: rgb(38, 38, 230);
+            color: antiquewhite;
+        }
+        /* sub1 div of top portion 2nd partition*/
+        .sub1{
+            height: inherit;
+            width: 80%;
+            background-color: rgb(38, 38, 230);
+        }
+        /* ancor style */
+        a{
+            text-decoration: none;
+            color: antiquewhite;
+            font-size: large;
+        }
+        /* main portion */
+        .main{
+            height: 700px;
+            width: 100%;
+            background-color: rgb(38, 38, 230);
+            display: flex;
+        }
+        /* m1 div of main portion partition 1 */
+        .m1{
+            height: inherit;
+            width: 50%;
+            background-color: rgb(38, 38, 230);
+        }
+        /* m2 div of main portion partition 2 */
+        .m2{
+            height: inherit;
+            width: 50%;
+            background-color: rgb(38, 38, 230);
+        }
+        /* play icon */
+        .fa-circle-play{
+            color: antiquewhite;
+            font-size: 35px;
+        }
+        /* bottom portion */
+        .bottom{
+            height: 100px;
+            width: 100%;
+            background-color: rgb(38, 38, 230);
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="sub" style="font-weight: 900;font-size: xx-large; margin-top: 1%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ARSHA</div>
+        <div class="sub1" style="margin-top: 1%;">
+            <a href="home">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home</a>
+            <a href="About">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About</a>
+            <a href="Services">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Services</a>
+            <a href="Porfolio">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Portfolio</a>
+            <a href="Team">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Team</a>
+            <select name="" id="" style="border: 10px solid rgb(38, 38, 230); margin-left: 20px;background-color: rgb(38, 38, 230);color: antiquewhite;font-size: larger;">
+                <option value="" selected disabled>Drop down</option>
+                <option value="">Demo1</option>
+                <option value="">Demo1</option>
+                <option value="">Demo1</option>
+                <option value="">Demo1</option>
+            </select>
+            <a href="Contact">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact</a>
+            <button style="height: 30px; width: 150px;margin-left: 30px;background-color: rgb(44, 89, 211);color: antiquewhite;border-radius: 20px;font-size: large;">Get Started</button>
+        </div>
+    </div>
+    <div class="main">
+        <div class="m1">
+            <h1 style="margin-top: 200px;margin-left: 120px;color: antiquewhite;font-size: 50px;">Better Solution For Your Business</h1><br>
+            <h3 style="margin-left: 120px;color: antiquewhite; font-size: 25px;">We are team of talented designers making<br> websites with Bootstrap</h3><br><br>
+            <button style="height: 40px; width: 200px;margin-left: 120px;background-color: rgb(44, 89, 211);color: antiquewhite;border-radius: 20px;font-size: x-large;">Get Started</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="fa-regular fa-circle-play"></i>  <!-- inserted play icon from font awsome -->
+            <a target="_blank" href="https://youtu.be/TORfAEp8AUs" style="font-size: 35px;">watch video</a>
+        </div>
+        <div class="m2"><br><br>
+            <img src="image/hero-img.png" style="height: 400px; width: 400px; margin-top: 100px; margin-left: 100px;">
+        </div>
+    </div>
+    <div class="bottom"></div>
+</body>
+</html>

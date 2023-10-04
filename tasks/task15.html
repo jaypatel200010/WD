@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .top{
+            height: 50px;
+            width: 100%;
+            background-color: red;
+            display: flex;
+        }
+        .top1{
+            height: inherit;
+            width: 40%;
+            background-color: red;
+        }
+        .fa-headphones{
+            color: white;
+            margin-top: 12px;
+            margin-left: 20%;
+            font-size: larger;
+        }
+        .top2{
+            height: inherit;
+            width: 60%;
+            background-color: red;
+        }
+        a{
+            text-decoration: none;
+        }
+        .home{
+            color: white;
+            margin-left: 20%;
+        }
+        .home:hover{
+            text-decoration: underline;
+            font-size: larger;
+            color: black;
+        }
+        .about:link{
+            color: white;
+        }
+        .about:hover{
+            color: cyan;
+            border: 2px solid white;
+        }
+        .other:link{
+            color: white;
+        }
+        .other:hover{
+            color: cyan;
+            border: 2px solid white;
+        }
+        .overview:link{
+            color: white;
+        }
+        .overview:hover{
+            color: cyan;
+            border: 2px solid white;
+        }
+        .contact:link{
+            color: white;
+        }
+        .contact:hover{
+            color: cyan;
+            border: 2px solid white;
+        }
+        .fa-gift{
+            color: white;
+            border: 2px solid black;
+            background-color: black;
+            height: 22px;
+            width: 40px;
+            text-align: center;
+        }
+        .sec{
+            height: 400px;
+            width: 100%;
+            background-color: white;
+        }
+        video{
+            height: inherit;
+            width: 100%;
+            z-index: 1;
+            position: relative;
+        }
+        .t1{
+            position: absolute;
+            top: 100px;
+            left: 400px;
+            z-index: 2;
+            color: white;
+            font-size: xx-large;
+        }
+        .explore{
+            position: absolute;
+            top: 300px;
+            left: 400px;
+            height: 30px;
+            width: 70px;
+            z-index: 2;
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+        .explore:hover{
+            color: aqua;
+            height: 40px;
+            width: 80px;
+        }
+        .three{
+            height: 150px;
+            width: 100%;
+            background-color: white;
+            display: flex;
+        }
+        .three1{
+            height: inherit;
+            width: 50%;
+            background-color: white;
+        }
+        .three2{
+            height: inherit;
+            width: 50%;
+            background-color: white;
+        }
+        .parts{
+            height: 280px;
+            width: 100%;
+            background-color: white;
+            position: relative;
+        }
+        .part1{
+            position: absolute;
+            height: 250px;
+            width: 230px;
+            background-color: black;
+            top: 20px;
+            left: 200px;
+            overflow: hidden;
+        }
+        .part2{
+            position: absolute;
+            height: 250px;
+            width: 230px;
+            background-color: black;
+            top: 20px;
+            left: 550px;
+            overflow: hidden;
+        }
+        .part3{
+            position: absolute;
+            height: 250px;
+            width: 230px;
+            background-color: black;
+            top: 20px;
+            left: 900px;
+            overflow: hidden;
+        }
+        .four{
+            position: relative;
+            height: 80px;
+            width: 100%;
+            background-color: white;
+        }
+        .four1{
+            position: absolute;
+            height: inherit;
+            width: 230px;
+            background-color: white;
+            left: 200px;
+        }
+        .four2{
+            position: absolute;
+            height: inherit;
+            width: 230px;
+            background-color: white;
+            left: 550px;
+        }
+        .four3{
+            position: absolute;
+            height: inherit;
+            width: 230px;
+            background-color: white;
+            left: 900px;
+        }
+        .image{
+            height: 300px;
+            width: 100%;
+            background-color: red;
+            position: relative;
+        }
+        img{
+            z-index: 1;
+        }
+        .t2{
+            position: absolute;
+            color: white;
+            z-index: 2;
+            top: 60px;
+            right: 20px;
+        }
+        .bot{
+            position: absolute;
+            z-index: 2;
+            top: 200px;
+            right: 20px;
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+            border-radius: 10px;
+            width: 200px;
+            height: 20px;
+        }
+        .bot:hover{
+            color: aqua;
+            height: 30px;
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="top1">
+           <a href="http://"><i class="fa-solid fa-headphones"></i>
+            &nbsp;&nbsp;<span style="color: white;"><b>ACME</b></span></a>
+        </div>
+        <div class="top2"><br>
+            <a href="http://" class="home">HOME</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://" class="about">ABOUT</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://" class="other">OTHER</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://" class="overview">OVERVIEW</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://" class="contact">CONTACT</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://"><i class="fa-solid fa-gift"></i></a>
+        </div>
+    </div>
+    <div class="sec">
+       <video autoplay muted loop>
+        <source src="image/big_buck_bunny_720p_1mb.mp4">
+    </video>
+    <p class="t1"><b>Serving you <br> <span style="font-size: x-large;">Scince 1989.</span></b><br>
+    <span style="font-size: large;">Lorem, ipsum dolor sit amet consectetur<br>adipisicing elit. Quia quibusdam repudiandae nam <br> tempora officia repellat fuga magni id deserunt error?</span>
+    </p>
+    <a href="http://"><button class="explore">Explore</button></a>
+    </div>
+    <div class="three">
+        <div class="three1">
+            <p style="margin-top: 70px; margin-left: 100px; color: black;">Ready to support.</p>
+            <h1 style="margin-left: 100px; color: black;">Support acme outdoors.</h1>
+        </div>
+        <div class="three2">
+            <p style="margin-top: 60px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, <br> labore eveniet. Dignissimos doloremque velit aperiam et veniam <br> sunt suscipit minima repellat aut exercitationem? </p>
+        </div>
+    </div>
+    <div class="parts">
+        <div class="part1"><h1 style="color: white; margin-top: 10px;margin-left: 10px;">01</h1><br>
+        <h1 style="color: white; text-align: center;">SHOP <br> PRODUCTS</h1>
+        <i class="fa-regular fa-circle" style="color: white;font-size: 50px;margin-left: 88%; margin-top: 35%;"></i>
+        </div>
+        <div class="part2"><h1 style="color: white; margin-top: 10px;margin-left: 10px;">02</h1><br>
+            <h1 style="color: white; text-align: center;margin-top: 20px;">DONATE</h1>
+            <i class="fa-regular fa-square" style="color: white;font-size: 50px;margin-left: 88%; margin-top: 39%;"></i>
+        </div>
+        <div class="part3">
+            <h1 style="color: white; margin-top: 10px;margin-left: 10px;">03</h1><br>
+            <h1 style="color: white; text-align: center;">BUY<br>GIFT CARDS</h1>
+            <i class="fa-regular fa-square" style="color: white;font-size: 50px;margin-left: 88%; margin-top: 35%;"></i>
+        </div>
+    </div>
+    <div class="four">
+        <div class="four1"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, velit!</p></div>
+        <div class="four2"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, velit!</p></div>
+        <div class="four3"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, velit!</p></div>
+    </div>
+    <div class="image">
+        <img src="image/7033.jpg" style="height: inherit; width: 100%;">
+        <p class="t2" style="text-align: right;"><span style="font-size: xx-large;">How we are keeping you <br> safe during COVID-19</span><br>Lorem ipsum dolor sit amet consectetur<br> adipisicing elit. Recusandae, <br> laboriosam! Lorem.</p>
+        <a href="http://"><button class="bot">Explore our achievement</button></a>
+    </div>
+</body>
+</html>

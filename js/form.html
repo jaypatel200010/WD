@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>form</legend>
+        <form method="post" style="background-color: rgb(56, 178, 230);" action="image/gujarat.jpg" onsubmit="return ValidData()">
+            <table>
+                <tr>
+                    <td>FIRST NAME</td>
+                    <td><input type="text" id="fname"> (max 30 characters a-z and A-Z)</td>
+                </tr>
+                <tr>
+                    <td>LAST NAME</td>
+                    <td><input type="text" id="lname"> (max 30 characters a-z and A-Z)</td>
+                </tr>
+                <tr>
+                    <td>EMAIL ID</td>
+                    <td><input type="email" id="email"></td>
+                </tr>
+                <tr>
+                    <td>MOBILE NUMBER</td>
+                    <td><input type="text" minlength="1" maxlength="10" id="mobile"> (10 digit number)</td>
+                </tr>
+                <tr>
+                    <td>password</td>
+                    <td><input type="password" id="pwd"></td>
+                </tr>
+                <tr>
+                    <td> <input type="submit" name="submit" value="submit"></td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+</body>
+
+</html>
+<script>
+    function ValidData() {
+        var fname = document.getElementById('fname').value;
+        if (fname == "") {
+            alert("enter name!");
+            
+            document.getElementById("fname").focus();
+            return false;
+        }
+        var lname = document.getElementById('lname').value;
+        if (lname == "") {
+            alert("enter last name!");
+            document.getElementById("lname").focus();
+            return false;
+        }
+        var email = document.getElementById('email').value;
+        if (email == "") {
+            alert("enter email!");
+            document.getElementById("email").focus();
+            return false;
+        }
+        var mobile = document.getElementById('mobile').value;
+        if (mobile == "") {
+            alert("enter mobile number!");
+            document.getElementById("mobile").focus();
+            return false;
+        }
+        var pwd = document.getElementById('pwb').value;
+        if (pwd == "") {
+            alert("enter pwd!");
+            document.getElementById("pwd").focus();
+            return false;
+        }
+    }
+</script>

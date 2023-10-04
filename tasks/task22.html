@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .one{
+            height: 60px;
+            width: 100%;
+            background-color: black;
+            position: relative;
+            display: flex;
+        }
+        .himanshu{
+            height: inherit;
+            width: 30%;
+        }
+        .t1{
+            position: sticky;
+            color: white;
+            width: 70%;
+        }
+        .main{
+            height: 500px;
+            background-color: aqua;
+        }
+        .sub{
+            display: none;
+            color: white;
+            background-color: blue;
+            border: 2px solid black;
+            width: 200px;
+            height: 50px;
+            text-align: center;
+        }
+        #a13{
+            cursor: pointer;
+        }
+        #a13:hover{
+            background-color: blue;
+        }
+        #a13:hover .sub{
+            display: block;
+        }
+        .sub1{
+            display: none;
+            color: white;
+            background-color: black;
+            border: 2px solid white;
+            width: 200px;
+            height: 50px;
+            text-align: center;
+        }
+        #a24:hover{
+            background-color: black;
+        }
+        #a24:hover .sub1{
+            display: block;
+            margin-left: 200px;
+        }
+        .sub3{
+            display: none;
+            color: white;
+            background-color: blue;
+            border: 2px solid black;
+            width: 200px;
+            height: 50px;
+            text-align: center;
+        }
+        #a34:hover{
+            background-color: blue;
+        }
+        #a34:hover .sub3{
+            display: block;
+            margin-left: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+        <div class="himanshu"></div>
+       <div class="t1" id="a11" style="width: 80px;">HOME</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <div class="t1" id="a12" style="width: 80px;">ABOUT</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <div class="t1" id="a13" style="width: 80px;">SERVICES
+        <div class="sub" id="a21" style="margin-top: 20px;">service one</div>
+        <div class="sub" id="a22">service two</div>
+        <div class="sub" id="a23">service three</div>
+        <div class="sub" id="a24">service four
+            <div class="sub1" id="a31" style="margin-top: -20px;">service one</div>
+            <div class="sub1" id="a32">service two</div>
+            <div class="sub1" id="a33">service three</div>
+            <div class="sub1" id="a34">service four
+                <div class="sub3" id="a41" style="margin-top: -20px;">service one</div>
+                <div class="sub3" id="a42">service two</div>
+                <div class="sub3" id="a43">service three</div>
+                <div class="sub3" id="a44">service four</div>
+                <div class="sub3" id="a45">service five</div>
+            </div>
+            <div class="sub1" id="a35">service five</div>
+        </div>
+        <div class="sub" id="a25">service five</div>
+       </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <div class="t1" id="a14" style="width: 80px;">PORFOLIO</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <div class="t1" id="a15" style="width: 80px;">CONTACT</div>
+    </div>
+    <div class="main"></div>
+</body>
+</html>

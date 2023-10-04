@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+</head>
+<body>
+    <input type="text" id="one">
+    <button id="two">xyz</button>
+    <p></p>
+    <script>
+        function a() {
+            var n1 = document.getElementById("one").value
+            // var r1 = document.getElementById("two").innerText = n1
+        }
+         $(document).ready(function () {
+            $("#two").click(function a() {
+                // $("p").prepend("<p>hiiii</p>")
+                // $("p").after("<p>hiiii</p>")
+                // $("p").before("<p>hiiii</p>")
+                $("p").append(one.value+"<br>")
+            })
+        })
+    </script>
+</body>
+</html>

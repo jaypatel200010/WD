@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <style>
+        .one{
+            height: 300px;
+            width: 100%;
+            background-color: cyan;
+        }
+        #two{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button>stop</button>
+    <div class="one" id="two1">1</div>
+    <div class="one" id="two2">2</div>
+    <script>
+        //    slideUp,slideDown
+        $(document).ready(function () {
+           $("#two1").click(function () {
+               $("#two2").slideToggle(3000) 
+           })
+           $("button").click(function () {
+               $("#two2").stop() 
+           })
+       })
+   </script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+a{
+    text-decoration: none;
+    font-size: x-large;
+}
+a:link{
+    color: red;
+}
+a:hover{
+    color: purple;
+}

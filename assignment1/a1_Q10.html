@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .top{
+            height: 50px;
+            width: 100%;
+            background-color: rgb(9, 184, 184);
+            color: red;
+        }
+        .two{
+            height: 130px;
+            width: 100%;
+            background-color: aqua;
+
+        }
+        .three{
+            height: 130px;
+            width: 100%;
+            background-color: aqua;
+            display: flex;
+        }
+        .three1{
+            height: inherit;
+            width: 40%;
+            background-color: aqua;
+        }
+        .three2{
+            height: inherit;
+            width: 60%;
+            background-color: aqua;
+        }
+        .four{
+            height: 100px;
+            width: 100%;
+            background-color: aqua;
+            display: flex;
+        }
+        .four1{
+            height: inherit;
+            width: 40%;
+            background-color: aqua;
+        }
+        .four2{
+            height: inherit;
+            width: 60%;
+            background-color: aqua;
+        }
+        .dec{
+            height: 180px;
+            width: 100%;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <h1 style="margin-left: 20%;">Individual Registration</h1>
+    </div><br><br>
+    <div class="two"><br>
+        <p style="margin-left: 20px; color: rgb(148, 6, 6); font-weight: bolder;font-size: large;">User particulars</p>
+        <div class="table1" style="text-align: right;">
+            <table style="margin-left: 20%;">
+                <tr>
+                    <td align="right" style="color: rgb(148, 6, 6); font-weight: 900;">*Login ID</td><td>&nbsp;&nbsp;&nbsp;<input type="text" style="border-radius: 5px;"></td>
+                </tr>
+                <tr>
+                    <td align="right" style="color: rgb(148, 6, 6); font-weight: 900;">*Password</td><td>&nbsp;&nbsp;&nbsp;<input type="password" style="border-radius: 5px;"></td>
+                </tr>
+                <tr>
+                    <td align="right" style="color: rgb(148, 6, 6); font-weight: 900;">*Confirm Password</td><td>&nbsp;&nbsp;&nbsp;<input type="password" style="border-radius: 5px;"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="three">
+        <div class="three1">
+            <p style="margin-left: 20px; color: rgb(148, 6, 6); font-weight: bolder;font-size: large;">Personal particulars</p>
+            <table style="margin-left: 30%;">
+                <tr>
+                    <td align="right" style="color: rgb(148, 6, 6); font-weight: 900;">*Salutation</td>
+                    <td>&nbsp;&nbsp;&nbsp;<select name="" id="">
+                        <option value="" selected disabled>Select&nbsp;&nbsp;&nbsp;</option>
+                        <option value="">Mr.</option>
+                        <option value="">Ms.</option>
+                        <option value="">Mrs.</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td align="right" style="color: rgb(148, 6, 6); font-weight: 900;">*Middle Name</td><td>&nbsp;&nbsp;&nbsp;<input type="text" style="border-radius: 5px;"></td> 
+                </tr>
+                <tr>
+                    <td align="right" style="color: rgb(148, 6, 6); font-weight: 900;">*Resident Status</td>
+                    <td>&nbsp;&nbsp;&nbsp;<select name="" id="">
+                        <option value="" selected disabled>Select&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                        <option value="">one</option>
+                        <option value="">two</option>
+                        <option value="">three</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td align="right" style="color: rgb(148, 6, 6); font-weight: 900;">*Email</td><td>&nbsp;&nbsp;&nbsp;<input type="email" style="border-radius: 5px;"></td> 
+                </tr>
+            </table>
+        </div>
+        <div class="three2"><br>
+            <table>
+                <tr>
+                    <td align="right" style="color: rgb(148, 6, 6); font-weight: 900;">*First Name</td><td>&nbsp;&nbsp;&nbsp;<input type="text" style="border-radius: 5px;"></td> 
+                </tr>
+                <tr>
+                    <td align="right" style="color: rgb(148, 6, 6); font-weight: 900;">*Last Name</td><td>&nbsp;&nbsp;&nbsp;<input type="text" style="border-radius: 5px;"></td> 
+                </tr>
+                <tr>
+                    <td align="right" style="color: rgb(148, 6, 6); font-weight: 900;">*Country</td>
+                    <td>&nbsp;&nbsp;&nbsp;<select name="" id="">
+                        <option value="" selected disabled>Select&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                        <option value="">India</option>
+                        <option value="">Pakistan</option>
+                        <option value="">Srilanka</option>
+                        <option value="">bangladesh</option>
+                        <option value="">nepal</option>
+                        <option value="">japan</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td align="right" style="color: rgb(148, 6, 6); font-weight: 900;">*Mobile number</td><td>&nbsp;&nbsp;&nbsp;<input type="text" minlength="1" maxlength="10" style="border-radius: 5px;"></td> 
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="four">
+        <div class="four1">
+            <p style="margin-left: 20px; color: rgb(148, 6, 6); font-weight: bolder;font-size: large;">Account particulars</p>
+            <table style="margin-left: 30%;">
+                <tr>
+                    <td align="right" style="color: rgb(148, 6, 6); font-weight: 900;">*15 Digit Account <br>number</td><td>&nbsp;&nbsp;&nbsp;<input type="text" minlength="1" maxlength="10" style="border-radius: 5px;"></td>
+                </tr>
+                <tr>
+                    <td align="right" style="color: rgb(148, 6, 6); font-weight: 900;">*Fund Transfer</td>
+                    <td>&nbsp;&nbsp;&nbsp;<select name="" id="">
+                        <option value="" selected disabled>Select&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                        <option value="">one</option>
+                        <option value="">two</option>
+                        <option value="">three</option>
+                    </select></td>
+                </tr>
+            </table>
+        </div>
+        <div class="four2"><br>
+            <table><br>
+                <tr>
+                    <td align="right" style="color: rgb(148, 6, 6); font-weight: 900;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Nick Name</td><td>&nbsp;&nbsp;&nbsp;<input type="text" style="border-radius: 5px;"></td> 
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="dec">
+        <p style="margin-left: 20px; color: rgb(148, 6, 6); font-weight: bolder;font-size: large;">DECLARATION</p>
+    <p style="margin-left: 20px; font-weight: 900;">
+        I have read,understood and hereby agree to the Terms and Condition in respect of all products and channels.
+    </p>
+    <p style="margin-left: 20px; font-weight: 900;">
+        I understand that any changes in the terms and condition applicable to this relationship would be made available to me on request <br>at any IOB branches. I confirm that all accounts under this login name are operated singly and in cavse of joint account operated by <br>either or survivor / anyone or survivors under his/her joint name respectively. I do hereby declare that information furnished in <br>this form is true to the best of my knowledge and belief.
+    </p><br><br>
+    <input type="submit" style="width: 100px;margin-left: 30%;">&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" style="width: 100px;">
+    </div>
+</body>
+</html>

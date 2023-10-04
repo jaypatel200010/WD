@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p id="one"></p>
+    <button onclick="a()">xyz</button>
+    <script>
+        // function without parameters
+        function a() {
+            document.getElementById("one").innerHTML="hi"
+        }
+    </script> -->
+    <!-- -------------------------------------------------------------------------------------------------------
+     -->
+    <p id="one"></p>
+    <p id="two"></p>
+    <button onclick="b('tops','tech')">xyz</button>
+    <script>
+
+        // function with parameters
+        function b(fname,lname) {
+            // console.log("first name",fname);
+            // console.log("last name",lname);
+            document.getElementById("one").innerHTML="your fname is"+fname
+            document.getElementById("two").innerHTML="your lname is"+lname
+        }
+        // b("tops","tech")
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!-- DOM - document object model. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p id="demo">on clicking the button data will be stored as cookie.</p> -->
+    <button onclick="myFunction1()">try it</button>
+    <p id="demo"></p>
+    <script>
+        // function myFunction() {
+        //     document.getElementById("demo").innerHTML = 
+        //     "cookies associated with this doc: " + document.cookies;
+        // }
+// *********************************************************************************************
+        // function myFunction1() {
+        //     document.getElementById("demo").innerHTML = 
+        //     "cookies associated with this doc: " + document.domain;
+        // }
+// *********************************************************************************************
+        // document.getElementById("demo").innerHTML = document.lastModified;
+// *********************************************************************************************
+            // document.getElementById("demo").innerHTML = 
+            // "the title of this document is: " + document.title;
+
+// *********************************************************************************************
+// document.getElementById("demo").innerHTML = 
+//             "the full url of document is: " + document.URL;
+
+// *********************************************************************************************
+function myFunction1() {
+    document.open("text/html", "replace");
+    document.write("<h2>learning about the html DOM is fun!</h2>");
+    document.close();
+}
+
+    </script>
+</body>
+</html>

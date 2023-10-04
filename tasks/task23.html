@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+         }
+         .top{
+            height: 70px;
+            width: 100%;
+            background-color: rgb(7, 91, 160);
+            display: flex;
+         }
+         .left{
+            width: 40%;
+            height: inherit;
+            background-color: rgb(7, 91, 160);
+         }
+         .right{
+            height: inherit;
+            width: 60%;
+            background-color: rgb(7, 91, 160);
+            display: flex;
+         }
+         .t1{
+            height: inherit;
+            width: 120px;
+            background-color: rgb(7, 91, 160);
+            text-align: center;
+            position: sticky;
+         }
+
+        @media (min-width:769px) and (max-width:1024px) {
+            .fa-bars{
+                display: none;
+            }
+            .ham{
+                display: flex;
+            }
+        }
+        @media (min-width:320px) and (max-width:769px){
+            .t1{
+                display: none;
+            color: white;
+            background-color: blue;
+            border: 2px solid black;
+            width: 200px;
+            height: 50px;
+            text-align: center;
+            }
+            .ham:hover .t1{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+   <div class="top">
+    <div class="left">
+        <h1 style="text-align: center; margin-top: 10px;">Coding India</h1>
+    </div>
+    <div class="right">
+        <div class="ham" id="a16"><span><br><i class="fa-solid fa-bars"></span></i>
+        <div class="t1" id="a11"><span><br>HOME</span></div>
+        <div class="t1" id="a12"><span><br>ABOUT</span></div>
+        <div class="t1" id="a13"><span><br>SERVICES</span></div>
+        <div class="t1" id="a14"><span><br>CONTACT</span></div>
+        <div class="t1" id="a15"><span><br>FEEDBACK</span></div>
+        </div>
+    </div>
+   </div>
+</body>
+</html>

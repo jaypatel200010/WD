@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        document.write('hi hello' + '<br>');
+        document.writeln('hi hello' + '<br>'); //not work properly
+    </script> -->
+<!-- ******************************************************************************************* -->
+    <!-- <p id="innerHTML">hi tops</p>
+    <p id="innerText">hi tops</p>
+    <script>
+        document.getElementById('innerHTML').innerHTML = "<h1>hi tops<h1>";
+        document.getElementById('innerText').innerText = "<h1>hi tops<h1>";
+    </script> -->
+
+<!-- ******************************************************************************************* -->
+
+<!-- <script>
+    function getcube() {
+        var n = document.getElementById("number").value;
+        document.getElementById("demo").innerHTML = n * n * n;
+    }
+</script>
+
+<form action="">
+Enter No: <input type="text" id = "number" name="number" value="10"><br>
+<input type="button" value="cube" onclick="getcube()">
+<p id="demo"></p>
+</form> -->
+<!-- ******************************************************************************************* -->
+
+<!-- <div class="example">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, perspiciatis?</p>
+</div>
+<div class="example">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, perspiciatis?</p>
+</div>
+<div class="example">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, perspiciatis?</p>
+</div>
+<div class="example">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, perspiciatis?</p>
+</div>
+
+<p>click on button</p>
+
+<button onclick="myFunction()">Try it</button>
+<button onclick="myFunction1()">Try it 1</button>
+<script>
+    function myFunction() {
+        var x = document.getElementsByClassName("example");
+        x[0].style.backgroundColor = "red";
+        x[1].style.backgroundColor = "yellow";
+        
+    }
+
+    function myFunction1() {
+        var x = document.getElementsByClassName("example");
+        var i;
+        for (i=0; i < x.length; i++) {
+            x[i].style.backgroundColor = "red";
+            
+        }
+    } -->
+<!-- </script> -->
+<!-- ******************************************************************************************* -->
+
+<!-- <script>
+    function countpara() {
+        var totalpara = document.getElementsByTagName("h2");
+        alert("total p tags are: " + totalpara.length);
+    }
+
+</script>
+<h2>hello</h2>
+<h2>hello</h2>
+<h2>hello</h2>
+<button onclick="countpara()">count h2</button> -->
+<!-- ******************************************************************************************* -->
+
+<!-- <script>
+    function showcommentform() {
+        var data = "Name:<input type = 'text' name= 'name'><br>comment:<br><textarea rows = '5' cols='80'></textarea><br><input type = 'submit' value='post comment'>";
+        document.getElementById('mylocation').innerHTML = data;
+    }
+</script>
+<form action="" name="myForm">
+    <input type="button" value="Button" onclick="showcommentform()">
+    <div id="mylocation"></div>
+
+</form> -->
+<!-- ******************************************************************************************* -->
+
+<form action="" name="myform">
+    <input type="password" name="userPass" onkeyup="byforname()">
+    strength: <span id="myloc">no strength</span>
+</form>
+<script>
+    function byforname() {
+        var msg;
+        // if (document.myform.userPass.value.length>5) {
+        //     document.getElementById('myloc').innerText="good";
+        //     document.getElementById('myloc').style.color="green";
+        // }
+        if (document.myform.userPass.value.length<=3) {
+            document.getElementById('myloc').innerText="weak";
+            document.getElementById('myloc').style.color="red";
+        } else if (document.myform.userPass.value.length<=5) {
+            document.getElementById('myloc').innerText="good";
+            document.getElementById('myloc').style.color="yellow";
+        } else if (document.myform.userPass.value.length>5 ){
+            document.getElementById('myloc').innerText="strong";
+            document.getElementById('myloc').style.color="green"; 
+        }
+    }
+</script>
+<!-- ******************************************************************************************* -->
+<!-- <script>
+    function WriteCookie() {
+        if (document.myform.customer.value == "") {
+            alert("Enter some value");
+            return;
+        }
+        // escape charactres in JS
+        cookievalue = escape(document.myform.customer.value) + ";";
+        document.cookie = "name=" + cookievalue;
+        document.write("setting cookies : " + "name=" +  cookievalue);
+    }
+</script>
+<form action="" name="myform">
+    Enter name: <input type="text" name="customer">
+    <input type="button" value="set cookie" onclick="WriteCookie()">
+</form> -->
+<!-- ******************************************************************************************* -->
+
+</body>
+</html>

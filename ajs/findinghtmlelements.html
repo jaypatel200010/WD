@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- <body>
+    <a href="falana.html" name="html">HTML tutorial</a><br>
+    <a href="#" name="css">css tutorial</a><br>
+    <a href="#" name="xml">XML tutorial</a><br>
+
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script>
+        document.getElementById("demo1").innerHTML = "Number of anchors are: " + document.anchors[0].innerHTML;
+        document.getElementById("demo2").innerHTML = "Number of links: " + document.links.length;
+        document.getElementById("demo3").innerHTML = "The href of the first link is " + document.links[0].href;
+
+    </script>
+</body> -->
+<body>
+    <script>
+        function getforms() {
+            var abc = document.form['myform']['abc'].value;
+            document.getElementById("demo4").innerHTML = "Name is " + abc;
+
+            var xyz = document.form['myform']['xyz'].value;
+            document.getElementById("demo5").innerHTML = "Name is " + xyz;
+        }
+    </script>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <form name="myform" action="" onsubmit="return getforms()">
+    Name: <input type="text" name="abc"><br><br>
+    Email: <input type="text" name="xyz"><br><br>
+    <input type="submit" name="submit
+    ">
+    </form>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .top{
+            height: 300px;
+            background-color: aqua;
+        }
+        .main{
+            height: 250px;
+            background-color: red;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .main1{
+            height: inherit;
+        }
+        #t1-1{
+            width: 30%;
+            background-color: green;
+        }
+        #t1-2{
+            width: 70%;
+            background-color: yellow;
+        }
+        @media (min-width:769px) and (max-width:1024px) {
+            #t1-1{
+                width: 30%;
+                background-color: orange;
+            }
+            #t1-2{
+                width: 70%;
+                background-color: white;
+            }
+        }
+        @media (min-width:481px) and (max-width:768px) {
+            #t1-1{
+                width: 50%;
+                background-color: orange;
+            }
+            #t1-2{
+                width: 50%;
+                background-color: white;
+            }
+        }
+        @media (min-width:320px) and (max-width:480px) {
+            #t1-1{
+                width: 100%;
+                background-color: orange;
+            }
+            #t1-2{
+                width: 100%;
+                background-color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="top"></div>
+    <div class="main">
+        <div class="main1" id="t1-1">1</div>
+        <div class="main1" id="t1-2">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt porro eaque dicta perspiciatis dolorem exercitationem maxime sit temporibus, fugit quod non dolorum nisi vitae aliquam id eos. Corrupti suscipit voluptas debitis a ut saepe, ducimus labore, quaerat tenetur qui culpa! Lorem ipsum dolor sit amet consectetur adipisicing elit. A nemo facilis laboriosam quasi nam totam quae, itaque doloribus dicta recusandae exercitationem id dolorum iusto! Sit libero aperiam maxime tenetur amet!</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student form</title>
+    <link rel="icon" href="https://th.bing.com/th/id/OIP.HbcRe4IrXQX2Zdy-dmXswAHaMA?w=117&h=191&c=7&r=0&o=5&pid=1.7" type="image/x-icon">
+</head>
+<body>
+    <h1 align="center"><u>Student Registration Form Using Table in HTML</u></h1>
+   <fieldset>
+    <legend>Form</legend>
+    <form method="post" style="background-color: red;">
+    <table cellspacing="10">
+            <tr>
+                <td>First Name</td>
+                <td><input type="text"> (Max 50 characters allowed)</td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text"> (Max 50 characters allowed)</td>
+            </tr>
+            <tr>
+                <td>Email ID</td>
+                <td><input type="email" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>Mobile Number</td>
+                <td><input type="text" minlength="1" maxlength="10"> (10 Digit Allowed)</td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td><input type="radio" name="abc" id="123">
+                <label for="123">Male</label>
+                <input type="radio" name="abc" id="456">
+                <label for="456">Female</label></td>
+            </tr>
+            <tr>
+                <td>Date of Birth(DOB)</td>
+                <td><select name="" id="">
+                    <option value="" selected disabled>Day</option>
+                    <option>mon</option>
+                    <option>tue</option>
+                    <option>wed</option>
+                    <option>thu</option>
+                    <option>fri</option>
+                    <option>sat</option>
+                    <option>sun</option>
+                </select>
+                <select name="" id="">
+                    <option value="" selected disabled>Month</option>
+                    <option>jan</option>
+                    <option>feb</option>
+                    <option>mar</option>
+                    <option>apr</option>
+                    <option>may</option>
+                </select>
+                <select name="" id="">
+                    <option value="" selected disabled>Year</option>
+                    <option>2000</option>
+                    <option>2001</option>
+                    <option>2002</option>
+                    <option>2022</option>
+                    <option>2023</option>
+                </select>
+            </td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><textarea name="" id="" cols="30" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td><input type="text" value="Mahemdabad"> (Max 50 characters allowed)</td>
+            </tr>
+            <tr>
+                <td>Pin Code</td>
+                <td><input type="text" value="123456" minlength="1" maxlength="6"> (Max 6 Numbers allowed)</td>
+            </tr>
+            <tr>
+                <td>State</td>
+                <td><input type="text" value="Gujarat"> (Max 50 characters allowed)</td>
+            </tr>
+            <tr>
+                <td>Country</td>
+                <td><input type="text" value="India"></td>
+            </tr>
+            <tr>
+                <td>Hobbies</td>
+                <td><input type="checkbox" name="" id="">
+                    <label for=""> Drawing</label>
+                    <input type="checkbox" name="" id="">
+                    <label for=""> Singing</label>
+                    <input type="checkbox" name="" id="">
+                    <label for=""> Dancing</label>
+                    <input type="checkbox" name="" id="">
+                    <label for=""> Sketching</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label for=""> Others</label>
+                    <input type="text" name="" id="" value="Ex. Teaching"> (Max 50 characters<br>Allowed)
+                </td>
+            </tr>
+            <tr>
+                <td>Qualification</td>
+                <td><input type="checkbox" name="" id="">
+                <label for="">High School(10th)</label><br>
+                <input type="checkbox" name="" id="">
+                <label for="">Higher School(12th)</label><br>
+                <input type="checkbox" name="" id="">
+                <label for="">Graduation(Bachelors)</label><br>
+                <input type="checkbox" name="" id="">
+                <label for="">Post Graduation(Masters)</label><br>
+                <input type="checkbox" name="" id="">
+                <label for="">Phd</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td>Courses<br>Applied for</td>
+                <td><input type="radio" name="efg" id="567">
+                <label for="567"> BCA(Bachelor of Computer Applications)</label><br>
+                <input type="radio" name="efg" id="467">
+                <label for="467"> B.Com(Bachelor of Commerce)</label><br>
+                <input type="radio" name="efg" id="678">
+                <label for="678"> B.Sc(Bachelor of Science)</label><br>
+                <input type="radio" name="efg" id="111">
+                <label for="111"> BA(Bachelor of Arts)</label><br>
+                <input type="radio" name="efg" id="112">
+                <label for="112"> MCA(Master of Computer Applications)</label><br>
+                <input type="radio" name="efg" id="113">
+                <label for="113"> M.Com(Master of Commerce)</label><br>
+                <input type="radio" name="efg" id="114">
+                <label for="114"> M.Sc(Master of Science)</label><br>
+                <input type="radio" name="efg" id="115">
+                <label for="115"> MA(Master of Arts)</label><br></br>
+            </td>
+            </tr>
+            <tr>
+                <td colspan="1"></td>
+                <td align="center"><input type="submit" name="" id="">
+                <input type="reset" name="" id=""></td>
+            </tr> 
+    </table>
+</form>
+   </fieldset> 
+</body>
+</html>

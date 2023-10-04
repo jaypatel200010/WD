@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>2000 X</td>
+            <td><input type="number" id="one" onkeyup="a()"></td>
+            <td id="two">0</td>
+        </tr>
+        <tr>
+            <td>1000 X</td>
+            <td><input type="number" id="three" onkeyup="a()"></td>
+            <td id="four">0</td>
+        </tr>
+        <tr>
+            <td>500 X</td>
+            <td><input type="number" id="five" onkeyup="a()"></td>
+            <td id="six">0</td>
+        </tr>
+        <tr>
+            <td>200 X</td>
+            <td><input type="number" id="seven" onkeyup="a()"></td>
+            <td id="eight">0</td>
+        </tr>
+        <tr>
+            <td>100 X</td>
+            <td><input type="number" id="nine" onkeyup="a()"></td>
+            <td id="ten">0</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td id="eleven">0</td>
+        </tr>
+    </table>
+    <script>
+        function a() {
+            var n1 = document.getElementById("one").value
+            var r1 = document.getElementById("two").innerHTML = n1 * 2000
+            var n2 = document.getElementById("three").value
+            var r2 = document.getElementById("four").innerHTML = n2 * 1000
+            var n3 = document.getElementById("five").value
+            var r3 = document.getElementById("six").innerHTML = n3 * 500
+            var n4 = document.getElementById("seven").value
+            var r4 = document.getElementById("eight").innerHTML = n4 * 200
+            var n5 = document.getElementById("nine").value
+            var r5 = document.getElementById("ten").innerHTML = n5 * 100
+            var total = document.getElementById("eleven").innerHTML = r1 + r2 + r3 + r4 + r5
+        }
+    </script>
+</body>
+</html>

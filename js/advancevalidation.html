@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Advance validation</legend>
+        <form method="post" style="background-color: rgb(56, 178, 230);" action="image/gujarat.jpg" onsubmit="return ValidData()">
+            <table>
+                <tr>
+                    <td>FIRST NAME</td>
+                    <td><input type="text" id="fname" onblur="ValidData(this,'nameerror')"
+                        onkeydown="NameValid(this,'nerror')">
+                    <span id="nameerror"></span>
+                    <span id="nerror"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>EMAIL ID</td>
+                    <td><input type="email" id="email" onblur="ValidData(this,'emailerror')"
+                        onkeydown="EmailValid(this,'eerror')">
+                        <span id="emailerror"></span>
+                        <span id="eerror"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>MOBILE NUMBER</td>
+                    <td><input type="text" minlength="1" maxlength="10" id="mobile" onblur="ValidData(this,'mobileerror')">
+                        <span id="mobileerror"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>password</td>
+                    <td><input type="password" id="pwd" onblur="ValidData(this,'pwderror')">
+                        <span id="pwderror"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <input type="submit" name="submit" value="submit"></td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+</body>
+</html>
+<script>
+    function ValidData(input, msg) {
+        if (input.value == "") {
+            document.getElementById(msg).style.color = "red";
+            document.getElementById(msg).innerText = "enter data!";
+        } else {
+            document.getElementById(msg).innerText = "";
+            return true;
+        }
+    }
+    function NameValid(input,msg) {
+        var fname = /^[a-zA-Z]+$/
+        if (fname.test(input.value)){
+            document.getElementById(msg).innerText = "";
+            return true;
+        }
+        else {
+            document.getElementById(msg).style.color = "red";
+            document.getElementById(msg).innerText = "Please enter only characters!";
+            return false;
+        }
+    }
+    function EmailValid(input,msg) {
+        var email = /^([a-z0-9.-_])+@+([a-z0-9-._]).([a-z]{3})/
+        if (email.test(input.value)){
+            document.getElementById(msg).innerText = "";
+            return true;
+        }
+        else {
+            document.getElementById(msg).style.color = "red";
+            document.getElementById(msg).innerText = "Please enter valid email!";
+            return false;
+        }
+    }
+</script>
