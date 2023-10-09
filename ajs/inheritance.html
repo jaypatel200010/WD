@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // // single inheritance
+        // class abc{
+        //     sum()
+        //     {
+        //         var a=10;
+        //         var b=20;
+        //         var sum;
+        //         sum = a+b;
+        //         document.write(sum);
+        //     }
+        // }
+        // class xyz extends abc
+        // {
+        //     multi()
+        //     {
+        //         var a=20;
+        //         var b=20;
+        //         var multi;
+        //         multi = a*b;
+        //         document.write(multi);
+        //     }
+        // }
+        // // multiple inheritance
+        // class pqr extends xyz
+        // {
+        //     div()
+        //     {
+        //         var a=20;
+        //         var b=10;
+        //         var div;
+        //         div = a/b;
+        //         document.write(div);
+        //     }
+        // }
+        // const obj = new pqr();
+        // obj.sum();
+        // obj.multi();
+        // obj.div();
+        // **********************************************************
+
+        class abc{
+            sum()
+            {
+                var a=10;
+                var b=20;
+                var sum;
+                sum = a+b;
+                document.write(sum);
+            }
+        }
+        class xyz extends abc
+        {
+            multi()
+            {
+                var a=20;
+                var b=20;
+                var multi;
+                multi = a*b;
+                document.write(multi);
+            }
+        }
+        class pqr extends abc
+        {
+            div()
+            {
+                var a=20;
+                var b=10;
+                var div;
+                div = a/b;
+                document.write(div);
+            }
+        }
+        const obj1 = new xyz();
+        const obj2 = new pqr();
+        obj1.sum();
+        obj1.multi();
+        obj2.sum();
+        obj2.div();
+    </script>
+</body>
+</html>
