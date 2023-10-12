@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // date as a string 
+        const d = new Date();
+        let text3 = d.toLocaleDateString();
+        document.write(text3 + "</br>");
+
+        // time as a string 
+        let text4 = d.toLocaleTimeString();
+        document.write(text4 + "</br>");
+
+        // date and time as a string 
+        let text5 = d.toLocaleString();
+        document.write(text5 + "</br>");
+
+        // toDateString() method returns the date (not the time) 
+        let text = d.toDateString();
+        document.write(text + "</br>");
+
+        // get a date as a string using ISO standard 
+        let text1 = d.toISOString();
+        document.write(text1 + "</br>");
+
+        // get a date as a string, formated JSON date; 
+        let text2 = d.toJSON();
+        document.write(text2 + "</br>");
+
+
+        // string to number 
+        let a = "13" 
+        console.log(typeof a);
+        let n =+ a
+        console.log(typeof n);
+    </script>
+</body>
+</html>
