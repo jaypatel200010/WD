@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zudio Near You</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            font-size: 16px;
+            font-family: Futura, sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 1.5;
+            background-color: #000;
+
+        }
+
+        .nav-item a {
+            color: white;
+            text-decoration: none;
+
+        }
+
+        .nav-item a:hover {
+            color: #3d4246;
+            text-decoration: none;
+
+
+        }
+
+        .container {
+            margin-top: 60px;
+
+        }
+
+        .navbar {
+            padding: 0 55px;
+
+        }
+
+        ul li {
+            list-style: none;
+            background-color: none;
+        }
+
+        .navbar-nav {
+            text-align: right;
+            margin: 21px 0;
+            padding: 0;
+            gap: 20px;
+            list-style: none;
+            float: right;
+            position: relative;
+
+        }
+
+        .nav-link {
+            color: #fff;
+            font-size: 18px;
+            padding: 3px 29px;
+
+        }
+
+        .foot {
+            color: #fff;
+            font-size: 15px;
+            text-transform: uppercase;
+        }
+
+        footer {
+            border-bottom: 1px solid #000000;
+            color: #ffffff;
+            background-color: #000000;
+            color: #e6e6e6;
+            margin-top: 0;
+            padding: 11px 0;
+        }
+
+        .copy {
+            max-width: 1280px;
+            padding-left: 55px;
+            padding-right: 55px;
+        }
+
+        .right {
+            float: left;
+            padding-left: 0;
+        }
+
+        .zudio {
+            position: absolute;
+            right: 20px;
+            padding-top: 80px;
+        }
+
+        .zudio a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .contain {
+            padding-top: 55px;
+            background-color: #fff;
+        }
+
+        .st {
+            position: relative;
+            margin: 0 20px;
+        }
+
+        .breadcrumb {
+            background-color: #fff;
+        }
+
+        ul.breadcrumb li {
+            display: inline;
+            font-size: 15px;
+        }
+
+        ul.breadcrumb li+li:before {
+            padding: 3px;
+            color: #000;
+            content: ">>";
+        }
+
+        ul.breadcrumb li+li:after {
+            padding: 6px;
+
+            content: ">>";
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        ul li a:hover {
+            text-decoration: none;
+            color: #646b70;
+            ;
+            cursor: pointer;
+        }
+
+        .one {
+            font-size: 1.25em;
+            text-transform: uppercase;
+            letter-spacing: .1em;
+            font-weight: 700;
+        }
+
+        .two {
+            margin: 0 35px;
+
+        }
+
+        .find {
+            background-color: #EFEFEF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 35px 0;
+            flex-direction: column;
+            margin-bottom: 30px;
+        }
+
+        .three {
+            text-align: center;
+            padding: 5px 20px;
+            text-transform: none;
+            letter-spacing: 0;
+            margin: 0 0 17.5px;
+            font-family: Futura, sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 1.2;
+            word-wrap: break-word;
+        }
+
+        .select {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        @media only screen and (min-width: 1024px) {
+            .select {
+                flex-direction: row;
+            }
+        }
+
+
+        .state {
+            display: inline-block;
+            padding: 10px;
+            width: 350px;
+            max-width: 350px;
+        }
+
+        select {
+            width: 100%;
+            line-height: 1.2;
+            text-indent: 0.01px;
+            text-overflow: "";
+            cursor: pointer;
+            padding: 8px 28px 8px 15px;
+            border: 1px solid #949494;
+            background-color: #fff;
+            color: #000;
+            max-width: 100%;
+            font-family: Futura, sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+        .four {
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .storesdetail {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: stretch;
+            align-items: stretch;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .storedetails {
+            width: 100%;
+            padding: 20px;
+            background-color: #f3f3f3;
+            margin: 0 10px 3px 10px
+        }
+
+        @media only screen and (min-width: 1024px) {
+            .storedetails {
+                width: 33%;
+                padding: 20px;
+                margin: 0 1px 1px 0;
+            }
+        }
+
+        .storedetails h3 {
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: -0.01em;
+            color: #232323;
+            margin-bottom: 15px;
+            margin: 0 0 17.5px;
+            font-family: Futura, sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .storedetails h5 {
+            font-size: 13px;
+            text-transform: uppercase;
+            color: #232323;
+            margin-bottom: 5px;
+            margin: 0 0 17.5px;
+            font-family: Futura, sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .storedetails p {
+            font-size: 12px;
+            color: #232323;
+            margin-bottom: 20px;
+            margin: 0 0 19.44444px;
+        }
+
+        a.moredetails {
+            background-color: black;
+            padding: 5px 8px;
+            color: white;
+            font-weight: 600;
+            margin: 0;
+            position: relative;
+            transition: all 500ms ease-in-out;
+            font-size: 12px;
+        }
+
+        a.moredetails b {
+            position: relative;
+            transition: all 500ms ease-in-out;
+
+        }
+
+        b {
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Zudio.html"><img
+                    src="https://www.zudio.com/cdn/shop/files/logo_360x.png?v=1613519896"></a>
+
+            <span class="navbar-toggler-icon"></span>
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="Z Stories.html">Z Stories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="1Zudio.html">#Zudio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Zudio Near You.html">Zudio Near You</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Z-World.html">Z World</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="contain">
+        <div class="st">
+            <ul class="breadcrumb">
+                <li><a>Home</a></li>
+                <li><a>Store Location</a></li>
+            </ul>
+
+        </div>
+
+        <header class="two">
+            <br>
+            <h2 class="one">
+                <span>Store Locator</span>
+            </h2>
+        </header>
+        <div class="find">
+            <h3 class="three">FIND THE ZUDIO STORE CLOSEST TO YOU</h3>
+            <div class="select">
+                <div class="state">
+                    <select class="form-control select2 country" id="store_state">
+                        <option value="" selected="selected">Select State</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Jammu&amp;Kashmir">Jammu&amp;Kashmir</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="West Bengal">West Bengal</option>
+                    </select>
+                </div>
+                <div class="state">
+                    <select class="form-control select2 " id="store_city">
+                        <option value="">Select City</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div>
+            <header class="four">
+                <h2 class="one">
+                    <span>ALL STORES (402)</span>
+                </h2>
+            </header>
+        </div>
+        <div class="storesdetail">
+            <div class="storedetails">
+                <h3>ZUDIO – AHMEDABAD, SATYAMEV ELITE</h3>
+                <h5>Address</h5>
+                <p>
+                    GF Shop No 101 to 106, Satyamev Elite, Bopal Bridge, Bopal Ambli Road, Opp BRTS
+                    , Ahmedabad
+                    - 380058
+                    , Gujarat
+                </p>
+                <a href="https://www.zudio.com/apps/s/zudio/storelocator/gujarat/ahmedabad/zudio-ahmedabad-satymev-elite-z194"
+                    class="moredetails"><b>MORE DETAILS »</b></a>
+            </div>
+            <div class="storedetails">
+                <h3>ZUDIO – BENGALURU, KAMMANAHALLI</h3>
+                <h5>Address</h5>
+                <p>
+                    No.7 M-322, 1st Block, 80 Ft Road, HRBR Layout, Landmark- Diagonally Opposite to Starbucks
+                    , Bengaluru
+                    - 560043
+                    , Karnataka
+                </p>
+                <a href="https://www.zudio.com/apps/s/zudio/storelocator/karnataka/bengaluru/zudio-bengaluru-z294"
+                    class="moredetails"><b>MORE DETAILS »</b></a>
+            </div>
+            <div class="storedetails">
+                <h3>ZUDIO – TEZPUR</h3>
+                <h5>Address</h5>
+                <p>
+                    N.C. Road, Near Kamrup, Anam Ghar
+                    , Tezpur
+                    - 784001
+                    , Assam
+                </p>
+                <a href="https://www.zudio.com/apps/s/zudio/storelocator/assam/tezpur/zudioassam-z269"
+                    class="moredetails"><b>MORE DETAILS »</b></a>
+            </div>
+            <div class="storedetails">
+                <h3>ZUDIO – VAPI, R-SQUARE</h3>
+                <h5>Address</h5>
+                <p>
+                    Vapi Daman Road, Chala
+                    , Vapi
+                    - 396191
+                    , Gujarat
+                </p>
+                <a href="https://www.zudio.com/apps/s/zudio/storelocator/gujarat/vapi/zudiovapi-z365"
+                    class="moredetails"><b>MORE DETAILS »</b></a>
+            </div>
+            <div class="storedetails">
+                <h3>ZUDIO - NASHIK, SHREE KALIKA PLAZA</h3>
+                <h5>Address</h5>
+                <p>
+                    Opposite Kalika Mandir, Old Agra Road
+                    , Nashik
+                    - 422002
+                    , Maharashtra
+                </p>
+                <a href="https://www.zudio.com/apps/s/zudio/storelocator/maharashtra/nashik/zudionashik-z432"
+                    class="moredetails"><b>MORE DETAILS »</b></a>
+            </div>
+            <div class="storedetails">
+                <h3>ZUDIO – FARIDABAD, NEELAM CHOWK</h3>
+                <h5>Address</h5>
+                <p>
+                    Arjonda Metro Station.
+                    , Faridabad
+                    - 121007
+                    , Haryana
+                </p>
+                <a href="https://www.zudio.com/apps/s/zudio/storelocator/haryana/faridabad/zudio-faridabad-neelam-chowk-z212"
+                    class="moredetails"><b>MORE DETAILS »</b></a>
+            </div>
+            <div class="storedetails">
+                <h3>ZUDIO – MUMBAI, VASAI</h3>
+                <h5>Address</h5>
+                <p>
+                    CFC Building, 1 A, At Gokhle, Rajprabha Industrial Estate Bhoidapada, Sativali Road
+                    , Mumbai
+                    - 401208
+                    , Maharashtra
+                </p>
+                <a href="https://www.zudio.com/apps/s/zudio/storelocator/maharashtra/mumbai/zudio-mumbai-z433"
+                    class="moredetails"><b>MORE DETAILS »</b></a>
+            </div>
+            <div class="storedetails">
+                <h3>ZUDIO - SURAT, MILANO MULTPLEX BARDOLI</h3>
+                <h5>Address</h5>
+                <p>
+                    Opp. Vimal Agro, Village Ten
+                    , Surat
+                    - 394601
+                    , Gujarat
+                </p>
+                <a href="https://www.zudio.com/apps/s/zudio/storelocator/gujarat/surat/zudio-surat-z500"
+                    class="moredetails"><b>MORE DETAILS »</b></a>
+            </div>
+            <div class="storedetails">
+                <h3>ZUDIO – BENGALURU, JAYANAGAR</h3>
+                <h5>Address</h5>
+                <p>
+                    #230 (Old No 17) 9th Main, Jayanagar 3rd Block
+                    , Bengaluru
+                    - 560011
+                    , Karnataka
+                </p>
+                <a href="https://www.zudio.com/apps/s/zudio/storelocator/karnataka/bengaluru/zudio-chennai-z219"
+                    class="moredetails"><b>MORE DETAILS »</b></a>
+            </div>
+            <div class="storedetails">
+                <h3>ZUDIO – DAVANAGERE, SS GARDENIA MALL</h3>
+                <h5>Address</h5>
+                <p>
+                    Door No. 3993/23, S. S. Layout, Shamanur Road
+                    , Davanagere
+                    - 577004
+                    , Karnataka
+                </p>
+                <a href="https://www.zudio.com/apps/s/zudio/storelocator/karnataka/davanagere/zudio-davanagere-z292"
+                    class="moredetails"><b>MORE DETAILS »</b></a>
+            </div>
+            <div class="storedetails">
+                <h3>ZUDIO – CHENNAI, PADUR</h3>
+                <h5>Address</h5>
+                <p>
+                    Bhoomi &amp; Buildings Pvt. Ltd. Stake- OMR
+                    , Chennai
+                    - 603103
+                    , Tamil Nadu
+                </p>
+                <a href="https://www.zudio.com/apps/s/zudio/storelocator/tamilnadu/chennai/zudio-chennai-z242"
+                    class="moredetails"><b>MORE DETAILS »</b></a>
+            </div>
+            <div class="storedetails">
+                <h3>ZUDIO – IMPHAL, PHUNI MALL</h3>
+                <h5>Address</h5>
+                <p>
+                    Ground floor &amp; First floor, Airport Road, Sagolband Sayang Pukhri Mapal
+                    , Imphal
+                    - 795001
+                    , Manipur
+                </p>
+                <a href="https://www.zudio.com/apps/s/zudio/storelocator/manipur/imphal/zudio-imphal-z469"
+                    class="moredetails"><b>MORE DETAILS »</b></a>
+            </div>
+            <div class="storedetails">
+                <h3>ZUDIO – PATNA, SAGUNA MALL</h3>
+                <h5>Address</h5>
+                <p>
+                    Ashiana Mahendra Enclave, Saguna- Khagaul Road, Kaliket Nagar, Mainpura, Opp. Ananya Tata Motors
+                    , Patna
+                    - 801503
+                    , Bihar
+                </p>
+                <a href="https://www.zudio.com/apps/s/zudio/storelocator/bihar/patna/zudio-patna-z273"
+                    class="moredetails"><b>MORE DETAILS »</b></a>
+            </div>
+            <div class="storedetails">
+                <h3>ZUDIO – PUNE, SAI PARADISE</h3>
+                <h5>Address</h5>
+                <p>
+                    Shop No. 6, 7, 8 &amp; 9, Punawale
+                    , Pune
+                    - 411033
+                    , Maharashtra
+                </p>
+                <a href="https://www.zudio.com/apps/s/zudio/storelocator/maharashtra/pune/zudio-pune-z430"
+                    class="moredetails"><b>MORE DETAILS »</b></a>
+            </div>
+            <div class="storedetails">
+                <h3>Zudio Surat, Vardan Textile</h3>
+                <h5>Address</h5>
+                <p>
+                    Shop No. G-4, G5, G6, HG-6, HG-7, HG-8, HG-9, AM’s Shri. Vardan Textile Market, Dumbhal Surat-
+                    395010, Gujarat.
+                    , Surat
+                    - 395010
+                    , Gujarat
+                </p>
+                <a href="https://www.zudio.com/apps/s/zudio/storelocator/gujarat/surat/zudiosurat-z368"
+                    class="moredetails"><b>MORE DETAILS »</b></a>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <div class="copy">
+            <div class="right">
+                <p class="foot">COPYRIGHT &#169; 2023 ZUDIO</p>
+                Don't miss out on the latest in fashion.<img
+                    src="https://cdn.shopify.com/s/files/1/0249/4155/9894/files/icons8-instagram-20_1.png?v=1692868821"
+                    alt="instagram-icon" style="position: relative;">
+                <span> Follow us @myzudio</span>
+            </div>
+        </div>
+        <div class="zudio">
+            <a href="mailto: Zudiohelp@trent-tata.com" aria-describedby="a11y-external-message">Contact us-
+                Zudiohelp@trent-tata.com </a>
+        </div>
+    </footer>
+</body>
+
+</html>

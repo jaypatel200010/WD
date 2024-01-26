@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+var scoreAsString = prompt("Enter the student's score:");
+var score = parseInt(scoreAsString);
+if (score >= 0 && score <= 100) {
+  var grade;
+  switch (true) {
+    case score >= 90:
+      grade = 'A+';
+      break;
+    case score >= 80:
+      grade = 'A';
+      break;
+    case score >= 70:
+      grade = 'B';
+      break;
+    case score >= 60:
+      grade = 'C';
+      break;
+    case score >= 50:
+      grade = 'D';
+      break;
+    default:
+      grade = 'F';
+  }
+  alert('The student received a grade of ' + grade);
+} else {
+  alert('Invalid input. Please enter a score between 0 and 100.');
+}
+    </script>
+</body>
+</html>

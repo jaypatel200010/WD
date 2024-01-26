@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <button onclick="myFuction()">Insert</button>
+    <p>Click "Insert" to insert a paragraph after the header.</p>
+    <h2 id="myH2">My header</h2>
+    <script>
+      function myFuction() {
+        const h2 = document.getElementById("myH2");
+        let html = "<p>My new Paragraph.</p>";
+        h2.insertAdjacentHTML("afterend", html);
+      }
+    </script> -->
+    <table border="1" id="table"></table>
+    <script>
+      let jsonData = `
+         {
+            "products": [
+            {
+                "id": 1,
+                "productName": "Apple",
+                "Qty": 100
+            },
+            {
+                "id": 2,
+                "productName": "Pineapple",
+                "Qty": 120
+            },
+            {
+                "id": 3,
+                "productName": "Mango",
+                "Qty": 10
+            }
+        ]}`;
+      let object = JSON.parse(jsonData);
+      const table = document.getElementById("table");
+      for (const myData of object.products) {
+        var html = `<tr>
+                <td>${myData.id}</td>
+                <td>${myData.productName}</td>
+                <td>${myData.Qty}</td>
+                </tr>`;
+        table.insertAdjacentHTML("afterbegin", html);
+      }
+    </script>
+  </body>
+</html>

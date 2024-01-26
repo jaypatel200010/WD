@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div>
-    <input type="submit" name="" id="" value="+" onclick="plus()">
-    <span id="test">1</span>
-    <input type="submit" name="" id="" value="-" onclick="minus()">
-</div>
-<script>
-    function plus() {
-        var value = document.getElementById('test').innerHTML;value++;
-        document.getElementById('test').innerHTML = value;
-    }
-    // function minus() {
-    //     var value = document.getElementById('test').innerHTML;value--;
-    //     document.getElementById('test').innerHTML = value;
-    // }
-    function minus() {
-        var value = document.getElementById('test').innerHTML;value--;
-        if (value < 1) {
-        } else {
-            document.getElementById('test').innerHTML = value;
-        }
-    }
-</script>
-</body>
+      <input type="submit" name="" id="" value="+" onclick="plus()" />
+      <span id="test">1</span>
+      <input type="submit" name="" id="" value="-" onclick="minus()" />
+    </div>
+    <script>
+      function plus() {
+        var value = document.getElementById("test").innerHTML;
+        value++;
+        document.getElementById("test").innerHTML = value;
+      }
+      function minus() {
+        var value = document.getElementById("test").innerHTML;
+        value--;
+        document.getElementById("test").innerHTML = value;
+      }
+      // function minus() {
+      //     var value = document.getElementById('test').innerHTML;value--;
+      //     if (value < 1) {
+      //     } else {
+      //         document.getElementById('test').innerHTML = value;
+      //     }
+      // }
+    </script>
+  </body>
 </html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function validation() {
+        var ufn = document.getElementById("ufn").value;
+        if (ufn == "" || ufn == "null") {
+          alert("First name is required.");
+          return false;
+        }
+        var uln = document.getElementById("uln").value;
+        if (uln == "" || uln == "null") {
+          document.getElementById("ulnmsg").innerHTML =
+            "Last name is required!";
+          return false;
+        }
+      }
+    </script>
+
+    <form action="" method="post" onsubmit="return validation()">
+      <table border="2" align="center">
+        <tr>
+          <th>reg page</th>
+        </tr>
+        <tr>
+          <th>first name</th>
+          <td>
+            <input type="text" name="ufn" id="ufn" />
+          </td>
+        </tr>
+        <tr>
+          <th>last name</th>
+          <td>
+            <input type="text" name="uln" id="uln" />
+            <span id="ulnmsg" style="color: red"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="submit" />
+          </td>
+        </tr>
+      </table>
+    </form>
+    <hr />
+    <script>
+      function validation2(str) {
+        if (str.ufn.value == "") {
+          document.getElementById("msg").innerHTML =
+            "!Please enter first name.";
+          str.ufn.focus();
+          return false;
+        }
+
+        if (str.uln.value == "") {
+          document.getElementById("msg").innerHTML = "!Please enter last name.";
+          str.uln.focus();
+          return false;
+        }
+
+        var gen_arr = document.getElementsByName("gender");
+        if (gen_arr[0].checked == true) {
+        } else if (gen_arr[1].checked == true) {
+        } else {
+          document.getElementById("msg").innerHTML = "! Please Select Gender";
+          return false;
+        }
+
+        var chk_arr = document.getElementsByName("chk");
+        if (chk_arr[0].checked == true) {
+        } else if (chk_arr[1].checked == true) {
+        } else if (chk_arr[2].checked == true) {
+        } else if (chk_arr[3].checked == true) {
+        } else {
+          document.getElementById("msg").innerHTML =
+            "! Please Select any one Hobby ";
+          return false;
+        }
+      }
+    </script>
+
+    <h1 align="center" id="msg" style="color: red"></h1>
+    <form action="" method="post" onsubmit="return validation2(this)">
+      <table border="2" align="center">
+        <tr>
+          <th>Registration Page</th>
+        </tr>
+        <tr>
+          <th>First Name:-</th>
+          <td><input type="text" name="ufn" id="ufn" /></td>
+        </tr>
+
+        <tr>
+          <th>Last Name:-</th>
+          <td><input type="text" name="uln" id="uln" /></td>
+        </tr>
+        <tr>
+          <th>Gender</th>
+          <td>
+            Male <input type="radio" name="gender" value="m" /> Female
+            <input type="radio" name="gender" value="f" />
+          </td>
+        </tr>
+        <tr>
+          <th>Hobby</th>
+          <td>
+            Reading <input type="checkbox" name="chk" value="Reading" /> Music
+            <input type="checkbox" name="chk" value="music" /> Outing
+            <input type="checkbox" name="chk" value="outing" /> Cricket
+            <input type="checkbox" name="chk" value="criket" />
+          </td>
+        </tr>
+        <tr>
+          <td><input type="submit" name="submit1" /></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
